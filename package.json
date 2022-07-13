@@ -1,0 +1,18 @@
+{
+    "name": "com.nfysoft.gamecubecontroller",
+    "version": "1.0.2",
+    "displayName": "Gamecube Controller Support",
+    "description": "Adds support for the Nintendo Gamecube Controller Adapter to the new unity input system",
+    "unity": "2021.1",
+    "keywords": [
+      "Input",
+      "Unity",
+      "Gamecube"
+    ],
+    "author": {
+      "name": "enfy"
+    },
+    "dependencies": {
+      "com.unity.inputsystem": "1.2.0"
+    }
+  }
