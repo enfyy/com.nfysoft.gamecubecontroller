@@ -9,7 +9,16 @@ The binaries for the plugin are in Assets/Plugin but you can also compile them y
 - Use Zadig to install the required custom driver as described [here](https://dolphin-emu.org/docs/guides/how-use-official-gc-controller-adapter-wii-u/#Windows)
 
 ### Linux
-Coming soon.
+Coming soon (maybe).
+
+## Install Package: 
+Add to you manifest.json:
+```json
+"dependencies": {
+  "com.nfysoft.gamecubecontroller": "git@github.com:enfyy/com.nfysoft.gamecubecontroller.git"  
+}
+```
+
 
 ## Usage:
 - Put the GamecubeControllerAdapter script on any game object in your scene.
