@@ -12,7 +12,7 @@ The binaries for the plugin are in Assets/Plugin but you can also compile them y
 Coming soon (maybe).
 
 ## Install Package: 
-Add to you manifest.json:
+Add to your manifest.json:
 ```json
 "dependencies": {
   "com.nfysoft.gamecubecontroller": "git@github.com:enfyy/com.nfysoft.gamecubecontroller.git"  
