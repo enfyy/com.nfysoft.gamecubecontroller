@@ -1,5 +1,9 @@
 ## Changelog
 
+## ## [2.0.1] - 22-08-2022
+### Changed
+- Adjusted StickControls so that they have more sensible values (and the directionals work).
+
 ## [2.0.0] - 29-05-2022
 ### Changed
 - Stop using LibUsbDotNet

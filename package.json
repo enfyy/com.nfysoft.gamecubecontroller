@@ -1,6 +1,6 @@
 {
     "name": "com.nfysoft.gamecubecontroller",
-    "version": "1.0.2",
+    "version": "2.0.1",
     "displayName": "Gamecube Controller Support",
     "description": "Adds support for the Nintendo Gamecube Controller Adapter to the new unity input system",
     "unity": "2021.1",

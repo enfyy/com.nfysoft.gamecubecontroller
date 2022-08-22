@@ -31,20 +31,24 @@ namespace Nfysoft.GamecubeControllerSupport
         public byte second;
 
         // Left stick
-        [InputControl(name = "leftStick",   displayName = "Left Stick", layout = "Stick", format = "VC2S")]
-        [InputControl(name = "leftStick/x", displayName = "Left stick X", defaultState = 127, offset = 0, format = "BYTE",
-            parameters = "normalize, normalizeMin=0, normalizeMax=1, normalizeZero=0.5")]
-        [InputControl(name = "leftStick/y", displayName = "Left stick Y", defaultState = 127, offset = 1, format = "BYTE",
-            parameters = "normalize, normalizeMin=0, normalizeMax=1, normalizeZero=0.5")]
+        [InputControl(name = "leftStick", format = "VC2S", layout = "Stick")]
+        [InputControl(name = "leftStick/x", offset = 0, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5")]
+        [InputControl(name = "leftStick/left", offset = 0, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5,clamp=1,clampMin=0.15,clampMax=0.5,invert")]
+        [InputControl(name = "leftStick/right", offset = 0, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5,clamp=1,clampMin=0.5,clampMax=0.85")]
+        [InputControl(name = "leftStick/y", offset = 1, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5")]
+        [InputControl(name = "leftStick/up", offset = 1, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5,clamp=1,clampMin=0.5,clampMax=0.85,invert=false")]
+        [InputControl(name = "leftStick/down", offset = 1, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5,clamp=1,clampMin=0.15,clampMax=0.5,invert")]
         public byte third;
         public byte fourth;
 
         // C stick
-        [InputControl(name = "cStick",   displayName = "C Stick", layout = "Stick", format = "VC2S")]
-        [InputControl(name = "cStick/x", displayName = "C Stick X", defaultState = 127, offset = 0, format = "BYTE",
-            parameters = "normalize,normalizeMin=0,normalizeMax=1,normalizeZero=0.5")]
-        [InputControl(name = "cStick/y", displayName = "C Stick Y", defaultState = 127, offset = 1, format = "BYTE",
-            parameters = "normalize,normalizeMin=0,normalizeMax=1,normalizeZero=0.5")]
+        [InputControl(name = "cStick", format = "VC2S", layout = "Stick")]
+        [InputControl(name = "cStick/x", offset = 0, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5")]
+        [InputControl(name = "cStick/left", offset = 0, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5,clamp=1,clampMin=0.15,clampMax=0.5,invert")]
+        [InputControl(name = "cStick/right", offset = 0, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5,clamp=1,clampMin=0.5,clampMax=0.85")]
+        [InputControl(name = "cStick/y", offset = 1, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5")]
+        [InputControl(name = "cStick/up", offset = 1, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5,clamp=1,clampMin=0.5,clampMax=0.85,invert=false")]
+        [InputControl(name = "cStick/down", offset = 1, format = "BYTE", parameters = "normalize,normalizeMin=0.15,normalizeMax=0.85,normalizeZero=0.5,clamp=1,clampMin=0.15,clampMax=0.5,invert")]
         public byte fifth;
         public byte sixth;
 
